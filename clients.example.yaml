@@ -1,0 +1,30 @@
+# Who you are, and who your clients are. aftercall files each call under one of
+# these, and only ever addresses a draft to a contact listed here.
+me:
+  name: Jordan
+  business: Jordan Croome
+  voice: |
+    Plain Australian English. Short sentences. Say what happened first.
+    No "I hope this email finds you well". No exclamation marks.
+
+clients:
+  - slug: northlight
+    name: Northlight Property
+    contacts:
+      - name: Priya Shah
+        email: priya@northlight.example
+    notes: Real estate agency, eight agents. Interested in automating listing copy.
+
+  - slug: harbour-physio
+    name: Harbour Street Physio
+    contacts:
+      - name: Tom Nguyen
+        email: tom@harbourphysio.example
+    notes: Two-clinic physio practice. Booking reminders and recall messages.
+
+  - slug: copperleaf
+    name: Copperleaf Builders
+    contacts:
+      - name: Dee Walsh
+        email: dee@copperleaf.example
+    notes: Residential builder. Quotes and variation paperwork.

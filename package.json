@@ -1,0 +1,29 @@
+{
+  "name": "aftercall",
+  "version": "0.1.0",
+  "description": "Turn a recorded client call into notes, action items and a draft follow-up email, filed under the right client.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "bin": {
+    "aftercall": "src/cli.ts"
+  },
+  "scripts": {
+    "aftercall": "tsx src/cli.ts",
+    "demo": "tsx src/cli.ts --file examples/demo-call.txt --title \"Northlight Property, listing copy trial\" --date 2026-10-26 --config examples/clients.yaml --out examples/output --redo",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.3.0",
+    "yaml": "^2.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}
